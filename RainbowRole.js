@@ -26,9 +26,12 @@ const servers = config.servers;
 
 function changeColor() {
   for (let index = 0; index < servers.length; ++index) {		
-    client.guilds.get(servers[index]).roles.find('name', config.roleName).setColor('#ccc')
+    
     if(config.logging){
       console.log(`[ColorChanger] Changed color to ${rainbow[place]} in server: ${servers[index]}`);
+      let getrolename = client.guilds.get(servers[index]);
+      let rolename = getrolename.roles.find('name', config.roleName);
+      rolename.setColor(rainbow[place]);
     }
     if(place == (size - 1)){
       place = 0;
