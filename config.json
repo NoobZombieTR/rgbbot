@@ -5,8 +5,8 @@
 		"436564182746267653"
 	],
 	"roleName": "RGB",
-	"colors": 12,
-	"speed": 60000,
+	"colors": 10,
+	"speed": 5000,
 	"logging": true
 }
 
