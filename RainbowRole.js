@@ -26,7 +26,7 @@ const servers = config.servers;
 
 function changeColor() {
   for (let index = 0; index < servers.length; ++index) {		
-    client.guilds.get(servers[index]).roles.find('name', "RGB").setColor(rainbow[place])
+    client.guilds.get('name', servers[index]).roles.find('name', "RGB").setColor(rainbow[place])
 		.catch(console.error);
 		
     if(config.logging){
